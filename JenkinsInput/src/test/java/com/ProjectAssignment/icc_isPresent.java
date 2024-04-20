@@ -2,17 +2,16 @@ package com.ProjectAssignment;
 
 import java.time.Duration;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriver.Timeouts;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class icc_isPresent {
-	public static void main(String[] args) throws InterruptedException {
+	@Test
+	public void Test() throws InterruptedException {
 		String CntryName="";
 		WebDriver d=new ChromeDriver();
 		d.manage().window().maximize();
